@@ -6,6 +6,16 @@
 <title>Ronco pode causar infarto - Portal Saúde Brasil</title>
 <meta name="description" content="ALERTA: Ronco pode causar infarto e morte súbita. Solução aprovada pela ANVISA.">
 
+<!-- ✅ OTIMIZAÇÃO VTURB - VELOCIDADE -->
+<script>!function(i,n){i._plt=i._plt||(n&&n.timeOrigin?n.timeOrigin+n.now():Date.now())}(window,performance);</script>
+<link rel="preload" href="https://scripts.converteai.net/0010d45d-617b-41a8-968d-a09f021a6fb7/players/699251d972552541035131f8/v4/player.js" as="script">
+<link rel="preload" href="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/smartplayer.js" as="script">
+<link rel="preload" href="https://cdn.converteai.net/0010d45d-617b-41a8-968d-a09f021a6fb7/699251cc626614ea48187112/main.m3u8" as="fetch">
+<link rel="dns-prefetch" href="https://cdn.converteai.net">
+<link rel="dns-prefetch" href="https://scripts.converteai.net">
+<link rel="dns-prefetch" href="https://images.converteai.net">
+<link rel="dns-prefetch" href="https://api.vturb.com.br">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Merriweather:wght@700;900&display=swap" rel="stylesheet">
@@ -51,21 +61,6 @@ align-items:center;
 justify-content:center;
 }
 .logo{font-family:'Merriweather',serif;font-size:20px;font-weight:900;color:var(--white);white-space:nowrap}
-.header-tag{
-background:var(--danger-red);
-color:var(--white);
-padding:8px 16px;
-border-radius:6px;
-font-size:12px;
-font-weight:700;
-text-transform:uppercase;
-letter-spacing:0.5px;
-display:flex;
-align-items:center;
-gap:8px;
-}
-.urgente-dot{width:8px;height:8px;background:var(--white);border-radius:50%;animation:pulse-dot 2s infinite}
-@keyframes pulse-dot{0%,100%{opacity:1}50%{opacity:.3}}
 
 .alert-banner{
 background:var(--danger-red);
@@ -93,19 +88,6 @@ box-shadow:var(--shadow-lg);
 border-top:5px solid var(--primary-blue);
 }
 
-.category-tag{
-display:inline-block;
-background:var(--danger-red);
-color:var(--white);
-padding:8px 18px;
-border-radius:6px;
-font-size:13px;
-font-weight:700;
-text-transform:uppercase;
-letter-spacing:.5px;
-margin-bottom:20px;
-}
-
 .headline{
 font-family:'Merriweather',serif;
 font-size:42px;
@@ -116,54 +98,26 @@ margin-bottom:20px;
 }
 .subheadline{font-size:19px;color:var(--text-gray);line-height:1.6;margin-bottom:30px}
 
+/* ✅ VÍDEO CONTAINER CORRIGIDO - NÃO CORTA NO MOBILE */
 .video-container{
-  position: relative;
-  width: 100%;
-  padding-top: 56.25%; /* 16:9 */
-  overflow: hidden;
-  border-radius: 12px;
-  background: #000;
-  box-shadow: var(--shadow-lg);
-  margin-bottom: 25px;
+position:relative;
+width:100%;
+padding-bottom:56.25%; /* 16:9 aspect ratio */
+overflow:hidden;
+border-radius:10px;
+background:#000;
+box-shadow:var(--shadow-lg);
+margin-bottom:25px;
 }
 
-/* o custom element precisa ser bloco + preencher o container */
 .video-container vturb-smartplayer{
-  position: absolute !important;
-  top: 0; left: 0;
-  width: 100% !important;
-  height: 100% !important;
-  display: block !important;
+position:absolute !important;
+top:0;
+left:0;
+width:100% !important;
+height:100% !important;
+display:block !important;
 }
-
-/* tenta pegar qualquer iframe/video que o player injete */
-.video-container iframe,
-.video-container video{
-  position: absolute !important;
-  top: 0; left: 0;
-  width: 100% !important;
-  height: 100% !important;
-  border: 0 !important;
-  display: block !important;
-}
-.video-placeholder{
-position:absolute;top:0;left:0;width:100%;height:100%;
-display:flex;flex-direction:column;align-items:center;justify-content:center;
-background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);
-color:var(--white);
-font-size:18px;
-font-weight:600;
-}
-.play-icon{
-width:90px;height:90px;
-background:rgba(255,255,255,.25);
-border-radius:50%;
-display:flex;align-items:center;justify-content:center;
-margin-bottom:20px;
-cursor:pointer;
-transition:transform .3s;
-}
-.play-icon:hover{transform:scale(1.08)}
 
 .cta-button{
 display:block;
@@ -224,25 +178,6 @@ border-radius:20px;
 padding:30px;
 box-shadow:var(--shadow-md);
 position:relative;
-}
-
-.product-image-placeholder{
-width:100%;
-height:280px;
-margin:0 auto;
-background:var(--white);
-border:3px dashed var(--medium-gray);
-border-radius:15px;
-display:flex;
-flex-direction:column;
-align-items:center;
-justify-content:center;
-font-size:14px;
-color:var(--text-gray);
-font-weight:600;
-line-height:1.6;
-text-align:center;
-padding:20px;
 }
 
 .product-image{
@@ -505,7 +440,6 @@ padding:15px 12px;
 cursor:pointer;
 transition:all .3s;
 position:relative;
-
 text-align:left;
 display:grid;
 grid-template-columns:24px 1fr auto;
@@ -835,8 +769,6 @@ justify-content:flex-start;
 .hero-section{padding:25px 15px}
 
 .logo{font-size:16px}
-.header-tag{font-size:10px;padding:6px 12px}
-.urgente-dot{width:6px;height:6px}
 
 .alert-banner{font-size:12px;padding:10px 12px}
 
@@ -860,11 +792,6 @@ display:none;
 
 .product-image-wrapper{
 padding:20px;
-}
-
-.product-image-placeholder{
-height:240px;
-font-size:13px;
 }
 
 .product-content{
@@ -925,12 +852,6 @@ font-size:12px;
 font-size:15px;
 padding:14px 20px;
 max-width:100%;
-}
-
-.category-tag{
-font-size:10px;
-padding:6px 12px;
-margin-bottom:12px;
 }
 
 .offers-section{padding:25px 12px}
@@ -1206,9 +1127,6 @@ box-shadow: 0 4px 20px rgba(30,142,225,.22) !important;
 border-radius: 10px !important;
 }
 
-.video-placeholder{
-background: var(--primary-blue) !important;
-}
 .payment-methods{
 text-align:center;
 margin-top: 28px;
@@ -1295,16 +1213,10 @@ animation-play-state: paused;
     Estudo revela que ronco crônico, <strong>aumenta em 300% o risco de morte cardíaca.</strong> Médicos apresentam solução simples aprovada pela, <strong>ANVISA</strong> que está salvando milhares de vidas.
 </p>
 
+<!-- ✅ VÍDEO VTURB COM EMBED OTIMIZADO -->
 <div class="video-container">
-  <vturb-smartplayer id="vid-699251d972552541035131f8"></vturb-smartplayer>
+  <vturb-smartplayer id="vid-699251d972552541035131f8" style="display: block; margin: 0 auto; width: 100%;"></vturb-smartplayer>
 </div>
-
-<script>
-  var s=document.createElement("script");
-  s.src="https://scripts.converteai.net/0010d45d-617b-41a8-968d-a09f021a6fb7/players/699251d972552541035131f8/v4/player.js";
-  s.async=true;
-  document.head.appendChild(s);
-</script>
 
 <a href="#ofertas" class="cta-button">QUERO PROTEGER MINHA SAÚDE AGORA</a>
 <p class="cta-subtext"><strong>🔒 Compra 100% Segura | Garantia de 60 Dias</strong></p>
@@ -1315,10 +1227,10 @@ animation-play-state: paused;
 <div class="product-image-container">
 <div class="product-image-wrapper">
 <div class="product-badge">✓ ANVISA</div>
-<img src="images/znorex.jpg" alt="Znorex - Dilatador Nasal Anti-Ronco" class="product-image">
+<img src="/images/znorex.jpg" alt="Znorex - Dilatador Nasal Anti-Ronco" class="product-image">
 </div>
 <div class="product-image-wrapper">
-<img src="images/qualidade.jpg" alt="Znorex - Qualidade e Certificações" class="product-image">
+<img src="/images/qualidade.jpg" alt="Znorex - Qualidade e Certificações" class="product-image">
 </div>
 </div>
 
@@ -1391,11 +1303,11 @@ animation-play-state: paused;
 
 <div class="before-after-grid">
 <div class="before-after-card">
-<img src="images/roncando.jpg" alt="Antes - Com Ronco">
+<img src="/images/roncando.jpg" alt="Antes - Com Ronco">
 <div class="card-label before-label">❌ ANTES - Com Ronco</div>
 </div>
 <div class="before-after-card">
-<img src="images/domindoempaz.jpg" alt="Depois - Sem Ronco">
+<img src="/images/domindoempaz.jpg" alt="Depois - Sem Ronco">
 <div class="card-label after-label">✅ DEPOIS - Sem Ronco</div>
 </div>
 </div>
@@ -1430,7 +1342,7 @@ animation-play-state: paused;
 <p class="offers-subtitle">Compre agora seu <strong>Znorex®</strong> e receba a solução pro seu sono na porta da sua casa!!</p>
 
 <div class="shipping-info">
-<img src="images/frete-full.jpg" alt="Frete Grátis e Full" style="max-width:40%; height:auto;">
+<img src="/images/frete-full.jpg" alt="Frete Grátis e Full" style="max-width:40%; height:auto;">
 </div>
 
 <div class="offer-countdown">
@@ -1440,9 +1352,6 @@ animation-play-state: paused;
 <div class="offers-options">
 
 <div class="offer-option" onclick="selectOffer(1, 147.00)" id="offer-1">
-<div class="offer-product-image">
-<img src="images/znorex1x.jpg" alt="1x Znorex" style="width:100%;height:100%;object-fit:contain;">
-</div>
 <div class="offer-radio"></div>
 <div class="offer-label">1x Znorex®</div>
 <div class="offer-save-badge">Economize 50%</div>
@@ -1452,10 +1361,6 @@ animation-play-state: paused;
 
 <div class="offer-option premium selected" onclick="selectOffer(2, 197.99)" id="offer-2">
 <div class="best-offer-badge">Melhor Oferta 👑</div>
-
-<div class="offer-product-image">
-<img src="images/znorex2x.jpg" alt="2x Znorex" style="width:100%;height:100%;object-fit:contain;">
-</div>
 <div class="offer-radio"></div>
 <div class="offer-label">2x Znorex®</div>
 <div class="offer-save-badge">Economize 66%</div>
@@ -1464,9 +1369,6 @@ animation-play-state: paused;
 </div>
 
 <div class="offer-option" onclick="selectOffer(3, 279.98)" id="offer-3">
-<div class="offer-product-image">
-<img src="images/znorex3x.jpg" alt="3x Znorex" style="width:100%;height:100%;object-fit:contain;">
-</div>
 <div class="offer-radio"></div>
 <div class="offer-label">3x Znorex®</div>
 <div class="offer-save-badge">Economize 73%</div>
@@ -1485,36 +1387,36 @@ animation-play-state: paused;
 <div class="payment-strip">
 <div class="payment-track">
 
-<div class="pay-item"><img src="images/payments/visa.png" alt="Visa"></div>
-<div class="pay-item"><img src="images/payments/mastercard.png" alt="Mastercard"></div>
-<div class="pay-item"><img src="images/payments/amex.png" alt="American Express"></div>
-<div class="pay-item"><img src="images/payments/applepay.png" alt="Apple Pay"></div>
-<div class="pay-item"><img src="images/payments/mercadopago.png" alt="Mercado Pago"></div>
-<div class="pay-item"><img src="images/payments/pix.png" alt="Pix"></div>
-<div class="pay-item"><img src="images/payments/boleto.png" alt="Boleto"></div>
-<div class="pay-item"><img src="images/payments/nupay.png" alt="NuPay"></div>
-<div class="pay-item"><img src="images/payments/paypal.png" alt="PayPal"></div>
+<div class="pay-item"><img src="/images/payments/visa.png" alt="Visa"></div>
+<div class="pay-item"><img src="/images/payments/mastercard.png" alt="Mastercard"></div>
+<div class="pay-item"><img src="/images/payments/amex.png" alt="American Express"></div>
+<div class="pay-item"><img src="/images/payments/applepay.png" alt="Apple Pay"></div>
+<div class="pay-item"><img src="/images/payments/mercadopago.png" alt="Mercado Pago"></div>
+<div class="pay-item"><img src="/images/payments/pix.png" alt="Pix"></div>
+<div class="pay-item"><img src="/images/payments/boleto.png" alt="Boleto"></div>
+<div class="pay-item"><img src="/images/payments/nupay.png" alt="NuPay"></div>
+<div class="pay-item"><img src="/images/payments/paypal.png" alt="PayPal"></div>
 
-<div class="pay-item"><img src="images/payments/visa.png" alt=""></div>
-<div class="pay-item"><img src="images/payments/mastercard.png" alt=""></div>
-<div class="pay-item"><img src="images/payments/amex.png" alt=""></div>
-<div class="pay-item"><img src="images/payments/applepay.png" alt=""></div>
-<div class="pay-item"><img src="images/payments/mercadopago.png" alt=""></div>
-<div class="pay-item"><img src="images/payments/pix.png" alt=""></div>
-<div class="pay-item"><img src="images/payments/boleto.png" alt=""></div>
-<div class="pay-item"><img src="images/payments/nupay.png" alt=""></div>
-<div class="pay-item"><img src="images/payments/paypal.png" alt=""></div>
+<div class="pay-item"><img src="/images/payments/visa.png" alt=""></div>
+<div class="pay-item"><img src="/images/payments/mastercard.png" alt=""></div>
+<div class="pay-item"><img src="/images/payments/amex.png" alt=""></div>
+<div class="pay-item"><img src="/images/payments/applepay.png" alt=""></div>
+<div class="pay-item"><img src="/images/payments/mercadopago.png" alt=""></div>
+<div class="pay-item"><img src="/images/payments/pix.png" alt=""></div>
+<div class="pay-item"><img src="/images/payments/boleto.png" alt=""></div>
+<div class="pay-item"><img src="/images/payments/nupay.png" alt=""></div>
+<div class="pay-item"><img src="/images/payments/paypal.png" alt=""></div>
 
 </div>
 </div>
 
-</div><!-- ✅ fecha .payment-methods -->
+</div>
 
 </section>
 
 <section class="guarantee-section">
 <div class="guarantee-seal">
-<img src="images/garantia.jpg" alt="Garantia de 60 Dias" style="width:100%;height:100%;object-fit:contain;">
+<img src="/images/garantia.jpg" alt="Garantia de 60 Dias" style="width:100%;height:100%;object-fit:contain;">
 </div>
 <div class="guarantee-content">
 <h3 class="guarantee-title">Garantia Incondicional</h3>
@@ -1634,10 +1536,18 @@ animation-play-state: paused;
 </p>
 </footer>
 
+<!-- ✅ SCRIPT VTURB - CARREGADO NO FINAL -->
+<script type="text/javascript">
+var s=document.createElement("script");
+s.src="https://scripts.converteai.net/0010d45d-617b-41a8-968d-a09f021a6fb7/players/699251d972552541035131f8/v4/player.js";
+s.async=true;
+document.head.appendChild(s);
+</script>
+
 <script>
 let selectedOfferQty = 2;
 let selectedOfferPrice = 197.99;
-let selectedCheckoutLink = 'https://seguro.paraisodasaude.online/r/AH17O7QTNG'; // Link padrão (oferta 2 - premium)
+let selectedCheckoutLink = 'https://seguro.paraisodasaude.online/r/AH17O7QTNG';
 
 function startTimer(duration){
 let timer = duration;
@@ -1675,15 +1585,11 @@ document.getElementById('offer-' + quantity).classList.add('selected');
 selectedOfferQty = quantity;
 selectedOfferPrice = price;
 selectedCheckoutLink = checkoutLinks[quantity];
-console.log('Oferta selecionada:', quantity, 'x por R$', price);
 }
 
 function finalizarCompra(){
 if(selectedCheckoutLink){
-console.log('Redirecionando para:', selectedCheckoutLink);
 window.location.href = selectedCheckoutLink;
-} else {
-console.error('Nenhum link de checkout configurado');
 }
 }
 
